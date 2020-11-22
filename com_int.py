@@ -19,14 +19,19 @@ for time in range(1,times):
 #print(principal_yearly)
 year = 1 
 
-for interest in interest_yearly:
-#    print("your interest for " + str(year) + " year is " + str(interest))
+while year <= 10:
+    for time in range(1,11):
+        print("your interest for " + str(time) + " year is " + str (interest_yearly[year])+ "" +str(principal_yearly[year]))
     year += 1
 
+
+#for interest in interest_yearly:
+#    print("your interest for " + str(year) + " year is " + str (interest)+ str(amount)) 
+#    year += 1
+
 year_for_principal = 1
-for amount in principal_yearly:
-    for interest in interest_yearly:
-        print("your interest for " + str(year) + " year is " + str(interest))
-        year += 1
-        print("your amount for " + str(year_for_principal) + " year is " + str(amount))
-        year_for_principal += 1
+#for amount in principal_yearly:   
+      
+
+#   print("your amount for " + str(year_for_principal) + " year is " + str(amount))
+#    year_for_principal += 1
