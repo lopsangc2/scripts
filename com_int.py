@@ -7,7 +7,6 @@ principal_yearly = []
 
 
 for time in range(1,times):
-    
     interest = int(original_principal * rate_of_interest)
     original_principal = original_principal + interest
     interest_yearly.append(interest)
@@ -17,11 +16,10 @@ for time in range(1,times):
 
 #print(interest_yearly)
 #print(principal_yearly)
-year = 1 
+year = 0
 
-while year <= 10:
-    for time in range(1,11):
-        print("your interest for " + str(time) + " year is " + str (interest_yearly[year])+ "" +str(principal_yearly[year]))
+while year < times-1:    
+    print("your interest for " + str(year+1) + " year is " + str (interest_yearly[year])+ " and principal is "  +str(principal_yearly[year]))
     year += 1
 
 
@@ -35,3 +33,5 @@ year_for_principal = 1
 
 #   print("your amount for " + str(year_for_principal) + " year is " + str(amount))
 #    year_for_principal += 1
+print(interest_yearly)
+print(principal_yearly)
