@@ -1,9 +1,19 @@
-original_principal = float(input("Enter The Amount " +
+try:
+    original_principal = float(input("Enter The Amount " +
                      "you want to deposit.  "))
-rate_of_interest = float(input("Enter the rate of "+
+
+except Exception:
+    print("Please try again NUMERICAL VALUE")
+try:
+    rate_of_interest = float(input("Enter the rate of "+
                     "interest  "))
-time_interval = int(input("How many years would you "+ 
+except Exception :
+    print("Please try again with NUMERICAL VALUE")
+try:
+    time_interval = int(input("How many years would you "+ 
                     "like to deposit your Amount  "))
+except Exception:
+    print("Please try again with NUMERICAL VALUE")
 times = time_interval + 1
 interest_yearly = []
 principal_yearly = []
